@@ -1,4 +1,4 @@
-package com.stockviewer.dbService.repository;
+package com.Quotation.dbService.repository;
 
 
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 
-import com.stockviewer.dbService.model.Quote;
+import com.Quotation.dbService.model.Quote;
 
 @Component
 public interface Quotesrepository extends JpaRepository<Quote, Integer> {

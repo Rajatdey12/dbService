@@ -1,10 +1,11 @@
-package com.stockviewer.dbService.repository;
+package com.Quotation.dbService.repository;
 
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
-import com.stockviewer.dbService.model.Quote;
+
+import com.Quotation.dbService.model.Quote;
 
 @Component
 @Repository

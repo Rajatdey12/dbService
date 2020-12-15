@@ -1,4 +1,4 @@
-package com.stockviewer.dbService.resource;
+package com.Quotation.dbService.resource;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,8 +15,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.stockviewer.dbService.model.Quote;
-import com.stockviewer.dbService.repository.Quotesrepository;
+
+import com.Quotation.dbService.model.Quote;
+import com.Quotation.dbService.repository.Quotesrepository;
 
 @Component
 @RestController
@@ -44,6 +45,12 @@ public class DBServiceResource {
 	@DeleteMapping("/delQuotes/{id}")
 	public List<Quote> deleteQuoteId(@PathVariable("id") final Integer id) {
 		 quoteRepository.deleteById(id);
+		return quoteRepository.findAll();
+	}
+	
+	@DeleteMapping("/deleteAll")
+	public List<Quote> deleteAllQuotes() {
+		quoteRepository.deleteAll();
 		return quoteRepository.findAll();
 	}
 

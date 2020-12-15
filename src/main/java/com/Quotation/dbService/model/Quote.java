@@ -1,4 +1,4 @@
-package com.stockviewer.dbService.model;
+package com.Quotation.dbService.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
