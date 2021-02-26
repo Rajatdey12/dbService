@@ -9,7 +9,7 @@ import com.Quotation.dbService.model.Quote;
 
 @Component
 @Repository
-public abstract class QuotesRepositoryImpl implements Quotesrepository{
+public abstract class QuotesRepositoryImpl implements QuotesRepository{
 	
 	@Override
 	public List<Quote> findByUserName(String userName) {

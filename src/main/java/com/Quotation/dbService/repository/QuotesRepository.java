@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import com.Quotation.dbService.model.Quote;
 
 @Component
-public interface Quotesrepository extends JpaRepository<Quote, Integer> {
+public interface QuotesRepository extends JpaRepository<Quote, Integer> {
 
 	public List<Quote> findByUserName(String userName);
 	
