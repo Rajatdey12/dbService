@@ -8,7 +8,6 @@ import javax.validation.Valid;
 
 import com.Quotation.dbService.repository.QuotesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.Quotation.dbService.model.Quote;
 
-@Component
 @RestController
 @RequestMapping("/rest/db")
 public class DBServiceResource {

@@ -8,9 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
-import org.springframework.stereotype.Component;
-
-@Component
 @Entity
 @Table(name="Quotes", catalog = "test")
 public class Quote {
@@ -22,6 +19,10 @@ public class Quote {
 	@NotNull
 	@Column(name = "UserName")
 	private String userName;
+
+	@Column(name= "Password")
+	private String password;
+
 	@NotNull
 	@Column(name = "quotes")
 	private  String quote;
@@ -50,6 +51,14 @@ public class Quote {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getQuote() {
